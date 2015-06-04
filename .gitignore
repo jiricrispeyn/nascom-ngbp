@@ -1,6 +1,10 @@
-*.sw*
 *~
-build/
-bin/
-node_modules/
-vendor/
+.DS_Store
+._*
+*.sublime-project
+*.sublime-workspace
+.sass-cache
+build
+bin
+node_modules
+vendor
