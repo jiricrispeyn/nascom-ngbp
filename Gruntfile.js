@@ -256,7 +256,8 @@ module.exports = function ( grunt ) {
           '<%= build_dir %>/src/**/*.js',
           '<%= html2js.common.dest %>',
           '<%= html2js.app.dest %>',
-          '<%= vendor_files.css %>'
+          '<%= vendor_files.css %>',
+          '<%= build_dir %>/assets/main.css'
         ]
       },
 
@@ -392,6 +393,7 @@ module.exports = function ( grunt ) {
    * A utility function to get all app CSS sources.
    */
   function filterForCSS ( files ) {
+    console.log(files);
     return files.filter( function ( file ) {
       return file.match( /\.css$/ );
     });
