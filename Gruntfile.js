@@ -393,7 +393,6 @@ module.exports = function ( grunt ) {
    * A utility function to get all app CSS sources.
    */
   function filterForCSS ( files ) {
-    console.log(files);
     return files.filter( function ( file ) {
       return file.match( /\.css$/ );
     });
